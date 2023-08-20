@@ -2,9 +2,9 @@
 
 //3.2 y 3.3
 
-let ele = document.getElementById("ele1")
+const ele = document.getElementById("ele1")
 
-//funcion
+//funcion modificada para seleccionar elemento fuera de la funcion
 function pintar (id, color = "green"){
     const elemento = document.querySelector(id)
     elemento.style.backgroundColor = color
@@ -12,7 +12,7 @@ function pintar (id, color = "green"){
 
 pintar ("#ele1",)
 
-//evento
+//evento click cambia a color amarillo
 ele.addEventListener("click", () => pintar("#ele1", "yellow"))
 
 

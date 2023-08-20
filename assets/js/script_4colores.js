@@ -4,7 +4,7 @@ const verde = document.getElementById("boxVerde")
 const amarillo = document.getElementById("boxAmarillo")
 
 
-//Funcion para dar style a los id
+//Funcion para dar style a los id fuera de la funcion
 const estiloBox = (id, color)=>{
     const elemento = document.querySelector(id)
     elemento.style.backgroundColor = color
@@ -18,7 +18,7 @@ estiloBox("#boxVerde", "green")
 estiloBox("#boxAmarillo", "yellow")
 
 
-//Eventos cambio color a negro
+//Eventos click los id cambian de color a negro
 //los hice en eventos de una linea
 azul.addEventListener("click", () => estiloBox("#boxAzul", "black"))
 rojo.addEventListener("click", () => estiloBox("#boxRojo", "black"))
@@ -28,7 +28,7 @@ amarillo.addEventListener("click", () => estiloBox("#boxAmarillo", "black"))
 
 
 
-//Agregar div con borde
+//Funcion para Agregar crear div con borde
 const agregarDiv = ()=>{
     const nuevoDiv = document.createElement("div")
     nuevoDiv.id ="key"
@@ -43,7 +43,8 @@ const agregarDiv = ()=>{
 agregarDiv()
 
 
-//evento
+
+//Eventos teclas presionadas el div id=#key cambia de color
 const nuevoDiv = document.getElementById("key")
 
 document.addEventListener("keydown", function (event){
